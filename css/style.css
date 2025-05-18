@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navigation {
+    margin-top: 25px;
+    font-family: var(--font1);
+    /* height: 74px; */
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left {
+    display: flex;
+
+}
+
+.nav-left span {
+    font-size: 35px;
+    padding-top: 2px;
+    margin-top: 17px;
+}
+
+.nav-left ul {
+    display: flex;
+    align-items: center;
+    margin: 0 77px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-left ul li {
+    list-style: none;
+    margin: 0 14px;
+    font-family: var(--font2);
+    transition: all .3s ease-in-out;
+}
+
+
+
+.nav-left ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-left ul li a:hover {
+    color: var(--main-bg-colour);
+    font-weight: bolder;
+
+}
+
+.content {
+    display: flex;
+    height: 100%;
+    background-color: rgb(254, 246, 238);
+    margin-top: 32px;
+    padding: 9px;
+    position: relative;
+}
+
+.content::after {
+    content: "";
+    background-image: url('../img/articlepage2.jpg');
+    position: absolute;
+    width: 100%;
+    height: 98%;
+    opacity: 0.1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -125px center;
+}
+
+.content-left {
+    font-family: var(--font1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    z-index: 1;
+}
+
+.content-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-right img {
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 600px;
+}
+
+.home-articles {
+    margin-top: 32px !important;
+    padding-top: 12px;
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    background-color: rgb(244, 240, 240);
+    position: relative;
+}
+
+.year-box {
+    position: absolute;
+    /* background-color: red; */
+    right: 60px;
+    top: 90px;
+    width: 235px;
+    height: 255px;
+    font-size: 20px;
+}
+
+.year-box div {
+    margin: 12px 0px;
+}
+
+.home-article {
+    display: flex;
+    margin: 15px;
+}
+
+.home-article-img img {
+    width: 300px;
+    /* reduce from 400px */
+    height: auto;
+    /* maintain ratio */
+}
+
+
+.home-article-content {
+    align-self: center;
+    padding: 25 px;
+}
+
+.home-article-content a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer {
+    height: 50px;
+    background-color: var(--main-bg-colour);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    flex-direction: column;
+}
+
+.footer a {
+    color: black;
+
+}
